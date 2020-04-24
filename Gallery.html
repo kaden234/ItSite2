@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+    <title> Information Technology | I.J.C. </title>
+
+<link rel="Stylesheet" href="css/Index_c.css">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<div class="topnav">
+        
+        <header> IT Program | IJC <IMG SRC="Images/P2.PNG" width=50px>
+
+	<a href="index.html"> Home </a>
+	<a href="Gallery.html"> Gallery </a>
+	<a href="Biography.html"> Profiles </a>
+    <a href="Lecturer.html"> Lecturer </a>
+    <a href="Courses.html"> Courses </a>
+    <a href="https://www.ijc.edu.bz" target="_blank">IJC Site</a>
+    <a href="https://ijc.abacus.bz/login/auth" target="_blank"> Abacus Site </a>
+
+	
+	</div>
+    
+    
+    <div class="mySlides">
+    <div class="numbertext">1 / 13</div>
+    <img src="Images/IT1.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">2 / 13</div>
+    <img src="Images/IT4.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">3 / 13</div>
+    <img src="Images/IT6.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">4 / 13</div>
+    <img src="Images/IT8.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">5 / 13</div>
+    <img src="Images/IT10.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">6 / 13</div>
+    <img src="Images/IT12.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">7 / 13</div>
+    <img src="Images/IT14.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">8 / 13</div>
+    <img src="Images/IT16.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">9 / 13</div>
+    <img src="Images/IT18.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">9 / 13</div>
+    <img src="Images/IT20.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">10 / 13</div>
+    <img src="Images/IT22.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">11 / 13</div>
+    <img src="Images/IT18.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">12 / 13</div>
+    <img src="Images/IT50.jpg" style="width:60%" class="center">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">13 / 13</div>
+    <img src="Images/IT51.JPG" style="width:60%" class="center">
+  </div>
+    
+       <div class="mySlides">
+    <div class="numbertext">13 / 13</div>
+    <img src="Images/J1.jpg" style="width:60%" class="center">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+    
+   
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<footer>
+	<p>© 2019 Independence Junior College. All Rights Reserved </p>
+</footer>
+    
+</html>  
